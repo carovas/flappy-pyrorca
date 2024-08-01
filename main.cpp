@@ -58,7 +58,7 @@ public:
 
     void update(float dt, float p_pos) {
         Rectangle topRec{pos, 0, cs, height - cs * 2.f};
-        Rectangle botRec{pos, height + cs * 2.f, cs, height};
+        Rectangle botRec{pos, height + cs, cs, height};
         float ccs = 15.f;
         DrawTexturePro(texture, srcRect, topRec, {0.f, 0.f}, 0.f, WHITE);// top rect
         DrawTexturePro(texture, srcRect, botRec, {0.f, 0.f}, 0.f, WHITE);// bot rect
