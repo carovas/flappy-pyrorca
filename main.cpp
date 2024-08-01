@@ -145,7 +145,7 @@ public:
         
         //DrawTextureEx(texture, {100.f, height}, handle_rotation(), cs / 200.f, WHITE); // 200.f is original size
 
-        if(force > -1.f && !IsKeyDown(KEY_SPACE))
+        if(force > -1.f && !IsKeyDown(KEY_E))
             force = force - 0.1f;
 
         height = height - jump_height * force * dt;
@@ -195,7 +195,7 @@ int main() {
     {
         float delta_time = GetFrameTime();
 
-        if(IsKeyDown(KEY_SPACE))
+        if(IsKeyDown(KEY_E))
         {
             pyrorca.jump(delta_time);
             s_handler.play_random_sound();
