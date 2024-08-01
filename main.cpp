@@ -203,7 +203,7 @@ int main() {
         }
 
         if(IsKeyDown(KEY_R)){
-
+            pyrorca.set_h(cs);
             handler.clear();
             handler.add(screen_width)->add(screen_width + screen_width / 3)->add(screen_width + (screen_width / 3) * 2);
         }
